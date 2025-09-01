@@ -18,12 +18,7 @@ while (chute != secretNumber) {
   }
 }
 
-if (attempts > 1) {
-  alert(
-    `Congratulations! You discovered the secret number (${secretNumber}) with ${attempts} attempts`
-  );
-} else {
-  alert(
-    `Congratulations! You discovered the secret number (${secretNumber}) with ${attempts} attempt`
-  );
-}
+let wordAttempt = attempts > 1 ? "attempts" : "attempt";
+alert(
+  `Congratulations! You discovered the secret number (${secretNumber}) with ${attempts} ${wordAttempt}`
+);
